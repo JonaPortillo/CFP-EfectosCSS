@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db;
+    text-decoration: underline double;
+}
+
+.boton-efecto {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-efecto:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+}
+
+.tarjeta-perfil {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.tarjeta-perfil:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+.imagen-zoom img {
+    width: 100px;
+    transition: transform 0.5s;
+}
+
+.imagen-zoom img:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.popup {
+    width: 200px;
+    padding: 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s;
+}
+
+/* Para activar el popup, podrías agregar una clase o cambiar este selector */
+body .popup:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.barra-contenedor {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 20px 0;
+}
+
+.barra-progreso {
+    width: 0;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+}
+
+/* Activa la animación con un retardo */
+.barra-contenedor:hover .barra-progreso {
+    width: 100%;
+}
+
+.texto-animado {
+    font-size: 2.5em;
+    color: #333;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: scale(0.95);
+}
+
+.texto-animado:hover {
+    filter: blur(0);
+    transform: scale(1);
+}
